@@ -1,0 +1,380 @@
+[
+    {
+        "id": 11,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 17,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "nonveg",
+        "category": "pizza",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140725-7029.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 12,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 13,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "nonveg",
+        "category": "pizza",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140725-7029.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 13,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 15,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "nonveg",
+        "category": "pizza",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140725-7029.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 14,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 13,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "veg",
+        "category": "pizza",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140725-7029.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 15,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 11,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "nonveg",
+        "category": "pizza",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140725-7029.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 16,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 10,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "veg",
+        "category": "pizza",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140725-7029.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 21,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 17,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "nonveg",
+        "category": "burger",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140725-7029.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 22,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 13,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "nonveg",
+        "category": "burger",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140725-7029.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 23,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 15,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "nonveg",
+        "category": "burger",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140725-7029.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 24,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 13,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "veg",
+        "category": "burger",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140725-7029.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 25,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 11,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "nonveg",
+        "category": "burger",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140725-7029.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 26,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 10,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 200,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "veg",
+        "category": "burger",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140725-7029.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 31,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 17,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 300,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "nonveg",
+        "category": "fish",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140735-7039.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 33,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 13,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 300,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "nonveg",
+        "category": "fish",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140735-7039.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 33,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 15,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 300,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "nonveg",
+        "category": "fish",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140735-7039.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 34,
+        "name": "PEPPER BARBECUE CHICKEN",
+        "quantity": 13,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 300,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "veg",
+        "category": "fish",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140735-7039.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 35,
+        "name": "Burger",
+        "quantity": 11,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 300,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "nonveg",
+        "category": "fish",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140735-7039.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    },
+    {
+        "id": 36,
+        "name": "Fish Item",
+        "quantity": 10,
+        "varients": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "prices": [
+            {
+                "small": 300,
+                "medium": 350,
+                "large": 400
+            }
+        ],
+        "category_veg": "veg",
+        "category": "fish",
+        "image": "https://img.freepik.com/free-photo/italian-sausage-pizza-table_140735-7039.jpg",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot."
+    }
+]
