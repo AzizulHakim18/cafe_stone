@@ -43,8 +43,8 @@ const Home = () => {
     // filterParam === "All"
     const search = (items) => {
         return items.filter((item) => {
-            if (filterParam === "All") {
-                if (filterParamVeg === "All") {
+            if (filterParam == "All") {
+                if (filterParamVeg == "All") {
                     return searchParam.some((newItem) => {
                         return (
                             item[newItem]
@@ -54,7 +54,7 @@ const Home = () => {
                         );
                     })
                 }
-                else if (item.category_veg === filterParamVeg) {
+                else if (item.category_veg == filterParamVeg) {
                     return searchParam.some((newItem) => {
                         return (
                             item[newItem]
@@ -66,8 +66,8 @@ const Home = () => {
                 }
             }
 
-            else if (item.category === filterParam) {
-                if (filterParamVeg === "All") {
+            else if (item.category == filterParam) {
+                if (filterParamVeg == "All") {
                     return searchParam.some((newItem) => {
                         return (
                             item[newItem]
@@ -77,7 +77,7 @@ const Home = () => {
                         );
                     })
                 }
-                else if (item.category_veg === filterParamVeg) {
+                else if (item.category_veg == filterParamVeg) {
                     return searchParam.some((newItem) => {
                         return (
                             item[newItem]
