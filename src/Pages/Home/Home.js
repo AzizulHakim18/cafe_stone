@@ -10,8 +10,10 @@ const Home = () => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
 
-    // filter method
+    // filter method by name
     const [filterParam, setFilterParam] = useState(["All"]);
+    // filter method by veg
+    const [filterParamVeg, setFilterParamVeg] = useState(["All"]);
 
     // search method
     const [q, setQ] = useState("");
@@ -35,31 +37,56 @@ const Home = () => {
     }, []);
 
     // console.log(items.map(item => console.log(item.category)));
-    console.log(items);
+    console.log(items.category_veg);
 
 
-
+    // filterParam === "All"
     const search = (items) => {
         return items.filter((item) => {
-            if (item.category === filterParam) {
-                return searchParam.some((newItem) => {
-                    return (
-                        item[newItem]
-                            .toString()
-                            .toLowerCase()
-                            .indexOf(q.toLowerCase()) > -1
-                    );
-                })
+            if (filterParam === "All") {
+                if (filterParamVeg === "All") {
+                    return searchParam.some((newItem) => {
+                        return (
+                            item[newItem]
+                                .toString()
+                                .toLowerCase()
+                                .indexOf(q.toLowerCase()) > -1
+                        );
+                    })
+                }
+                else if (item.category_veg === filterParamVeg) {
+                    return searchParam.some((newItem) => {
+                        return (
+                            item[newItem]
+                                .toString()
+                                .toLowerCase()
+                                .indexOf(q.toLowerCase()) > -1
+                        );
+                    })
+                }
             }
-            else if (filterParam === "All") {
-                return searchParam.some((newItem) => {
-                    return (
-                        item[newItem]
-                            .toString()
-                            .toLowerCase()
-                            .indexOf(q.toLowerCase()) > -1
-                    );
-                })
+
+            else if (item.category === filterParam) {
+                if (filterParamVeg === "All") {
+                    return searchParam.some((newItem) => {
+                        return (
+                            item[newItem]
+                                .toString()
+                                .toLowerCase()
+                                .indexOf(q.toLowerCase()) > -1
+                        );
+                    })
+                }
+                else if (item.category_veg === filterParamVeg) {
+                    return searchParam.some((newItem) => {
+                        return (
+                            item[newItem]
+                                .toString()
+                                .toLowerCase()
+                                .indexOf(q.toLowerCase()) > -1
+                        );
+                    })
+                }
             }
         })
     }
@@ -76,22 +103,36 @@ const Home = () => {
 
                 {/* search section */}
                 <div className='hero_search'>
-                    <div>
-                        <select
 
-                            onChange={(e) => {
-                                setFilterParam(e.target.value);
-                            }}
-                            className="custom-select"
-                            aria-label="Filter  By Category">
-                            <option value="All">All</option>
-                            <option value="Pizza">Pizza</option>
-                            <option value="Burger">Burger</option>
-                            <option value="Fish">Fish</option>
+                    <select
 
-                        </select>
-                        <span className="focus"></span>
-                    </div>
+                        onChange={(e) => {
+                            setFilterParam(e.target.value);
+                        }}
+                        className="custom-select"
+                        aria-label="Filter  By Category">
+                        <option value="All">All</option>
+                        <option value="Pizza">Pizza</option>
+                        <option value="Burger">Burger</option>
+                        <option value="Fish">Fish</option>
+
+                    </select>
+
+
+
+                    <select
+
+                        onChange={(e) => {
+                            setFilterParamVeg(e.target.value);
+                        }}
+                        className="custom-select"
+                        aria-label="Filter By Veg">
+                        <option value="All">All</option>
+                        <option value="Veg">Veg</option>
+                        <option value="NonVeg">NonVeg</option>
+                    </select>
+
+
                     <Form inline={true}>
                         <Input
                             type='search'
