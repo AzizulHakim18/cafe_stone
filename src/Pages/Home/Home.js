@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Products from './Products';
 import Form from 'muicss/lib/react/form';
 import Input from 'muicss/lib/react/input';
-import Button from 'muicss/lib/react/button';
+import './Home.css'
 
 const Home = () => {
 
@@ -10,7 +10,10 @@ const Home = () => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
 
+    // filter method
+    const [filterParam, setFilterParam] = useState(["All"]);
 
+    // search method
     const [q, setQ] = useState("");
     const [searchParam] = useState(["name"]);
 
@@ -21,6 +24,7 @@ const Home = () => {
                 (result) => {
                     setIsLoaded(true);
                     setItems(result);
+                    console.log(result);
                 },
 
                 (error) => {
@@ -30,17 +34,33 @@ const Home = () => {
             );
     }, []);
 
+    // console.log(items.map(item => console.log(item.category)));
     console.log(items);
-    const search = (item) => {
+
+
+
+    const search = (items) => {
         return items.filter((item) => {
-            return searchParam.some((newItem) => {
-                return (
-                    item[newItem]
-                        .toString()
-                        .toLowerCase()
-                        .indexOf(q.toLowerCase()) > -1
-                )
-            })
+            if (item.category === filterParam) {
+                return searchParam.some((newItem) => {
+                    return (
+                        item[newItem]
+                            .toString()
+                            .toLowerCase()
+                            .indexOf(q.toLowerCase()) > -1
+                    );
+                })
+            }
+            else if (filterParam === "All") {
+                return searchParam.some((newItem) => {
+                    return (
+                        item[newItem]
+                            .toString()
+                            .toLowerCase()
+                            .indexOf(q.toLowerCase()) > -1
+                    );
+                })
+            }
         })
     }
 
@@ -55,15 +75,33 @@ const Home = () => {
             <div>
 
                 {/* search section */}
-                <Form inline={true}>
-                    <Input
-                        type='search'
-                        name='search-form'
-                        placeholder='Search .....'
-                        value={q}
-                        onChange={(e) => setQ(e.target.value)}
-                    />
-                </Form>
+                <div className='hero_search'>
+                    <div>
+                        <select
+
+                            onChange={(e) => {
+                                setFilterParam(e.target.value);
+                            }}
+                            className="custom-select"
+                            aria-label="Filter  By Category">
+                            <option value="All">All</option>
+                            <option value="Pizza">Pizza</option>
+                            <option value="Burger">Burger</option>
+                            <option value="Fish">Fish</option>
+
+                        </select>
+                        <span className="focus"></span>
+                    </div>
+                    <Form inline={true}>
+                        <Input
+                            type='search'
+                            name='search-form'
+                            placeholder='Search .....'
+                            value={q}
+                            onChange={(e) => setQ(e.target.value)}
+                        />
+                    </Form>
+                </div>
 
                 {/* all item get by map method  */}
                 <div className='hero_cart'>
