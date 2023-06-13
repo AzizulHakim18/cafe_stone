@@ -3,3 +3,11 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+.hero_cart {
+    padding-top: 30px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
