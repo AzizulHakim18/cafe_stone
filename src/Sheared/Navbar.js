@@ -17,7 +17,7 @@ import RamenDiningIcon from '@mui/icons-material/RamenDining';
 
 const Navbar = () => {
 
-    const pages = ['Home', 'About', 'Contact', 'Blog'];
+    const pages = ['Food', 'Contact'];
     const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 

@@ -63,10 +63,10 @@ const Products = ({ item, handleAddToCart, setAddQuantity, addQuantity }) => {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button size="small" color="primary" onClick={() => { handleAddToCart(item) }}>
-                        Buy Now
+                    <Button size="small" color="primary" variant="outlined" onClick={() => { handleAddToCart(item) }}>
+                        Order Now
                     </Button>
-                    <Button size="small" color="primary" onClick={handleOpen}>
+                    <Button size="small" color="primary" variant="contained" aria-label="outlined primary button group" onClick={handleOpen}>
                         More Details
                     </Button>
                 </CardActions>

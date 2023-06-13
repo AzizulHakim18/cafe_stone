@@ -5,6 +5,9 @@ import Input from 'muicss/lib/react/input';
 import './Home.css';
 import Grid from '@mui/material/Grid/Grid';
 import Cart from './Cart';
+import { FormControl, InputLabel, OutlinedInput } from '@mui/material';
+
+
 
 const Home = () => {
 
@@ -100,6 +103,7 @@ const Home = () => {
         const newProduct = {
             id: product.id,
             price: product.price,
+            img: product.image,
             name: product.name,
             productQuantity: addQuantity,
 
@@ -121,12 +125,13 @@ const Home = () => {
 
                 {/* search section */}
                 <div className='hero_search'>
-
                     <select
 
+                        input={<OutlinedInput label="Name" />}
                         onChange={(e) => {
                             setFilterParam(e.target.value);
                         }}
+
                         className="custom-select"
                         aria-label="Filter  By Category">
                         <option value="All">All</option>
