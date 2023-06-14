@@ -31,11 +31,10 @@ const Navbar = () => {
     }
 
     const pages = ['Food', 'Contact'];
-    const settings = ['Profile', 'Account', 'Dashboard',];
 
 
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
+
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -152,13 +151,13 @@ const Navbar = () => {
                         {
                             user?.uid ?
                                 <Link onClick={handleLogout} to="/">
-                                    <Button variant="contained">Sign Out</Button>
+                                    <Button variant="contained" color="success">Sign Out</Button>
                                 </Link>
 
 
                                 : <Link to="/signin"
                                 >
-                                    <Button variant="contained">Sign In</Button>
+                                    <Button variant="contained" color="success">Sign In</Button>
                                 </Link>
                         }
 

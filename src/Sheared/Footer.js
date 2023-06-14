@@ -1,9 +1,9 @@
 import React from 'react';
-
+import "./Footer.css"
 const Footer = () => {
     return (
-        <div>
-            this is footer section
+        <div class="container">
+            <p>&copy; 2023 Cafe Stone. All rights reserved.</p>
         </div>
     );
 };
