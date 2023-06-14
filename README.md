@@ -1,70 +1,42 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Restaurant Website
 
-## Available Scripts
+This is a restaurant website built using React, Firebase, Material UI, and dotenv. It includes several functionalities such as displaying all items, a private routing system, a login system, a dynamic cart system, a double filter method, a searching option, dynamic quantity validation (orders cannot be placed if the quantity is less than the order), a details button that opens a modal with extra information, a grid section for responsive design, and a loading system for fetching data.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+To run this project locally, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository from GitHub:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/your-username/restaurant-website.git
+2. Navigate to the project directory:
+cd restaurant-website
+3. Create a .env file in the root directory and add your Firebase configuration details:
+REACT_APP_API_KEY=your_firebase_api_key
+REACT_APP_AUTH_DOMAIN=your_firebase_auth_domain
+REACT_APP_DATABASE_URL=your_firebase_database_url
+REACT_APP_PROJECT_ID=your_firebase_project_id
+REACT_APP_STORAGE_BUCKET=your_firebase_storage_bucket
+REACT_APP_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+REACT_APP_APP_ID=your_firebase_app_id
 
-### `npm test`
+4. Start the development server:
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Open your browser and visit http://localhost:3000 to see the website.
 
-### `npm run build`
+Functionality:
+This restaurant Cafe Stone website offers the following features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Displaying all items: Users can view a list of all available items on the menu.
+2. Private routing system: Certain pages are accessible only to authenticated users.
+3. Login system: Users can create an account or log in using their credentials.
+4. Dynamic cart system: Users can add items to their cart, view the cart contents, and place orders.
+5. Double filter method: Users can filter menu items by category and dietary restrictions simultaneously.
+6. Searching option: Users can search for specific menu items.
+7. Dynamic quantity validation: Orders cannot be placed if the quantity requested is greater than the available quantity.
+8. Details button: Users can click on a details button to open a modal that provides additional information about a menu item.
+9. Grid section for responsive design: The website layout adapts to different screen sizes using a responsive grid system.
+10. Loading system for fetching data: Users see loading indicators while data is being fetched from the backend.
