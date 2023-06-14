@@ -152,36 +152,13 @@ const Navbar = () => {
                         {
                             user?.uid ?
                                 <Link onClick={handleLogout} to="/">
-                                    <Typography
-                                        variant="h6"
-                                        noWrap
-                                        component="a"
-                                        sx={{
-                                            mr: 2,
-                                            display: { xs: 'none', md: 'flex' },
-                                            color: 'inherit',
-                                            textDecoration: 'none',
-                                        }}
-                                    >
-                                        Sign Out
-                                    </Typography>
+                                    <Button variant="contained">Sign Out</Button>
                                 </Link>
 
 
                                 : <Link to="/signin"
                                 >
-
-                                    <Typography
-                                        variant="h6"
-                                        noWrap
-                                        component="a"
-                                        sx={{
-                                            mr: 2,
-                                            display: { xs: 'none', md: 'flex' },
-                                            textDecoration: 'none',
-                                        }}>
-                                        Sign In
-                                    </Typography>
+                                    <Button variant="contained">Sign In</Button>
                                 </Link>
                         }
 

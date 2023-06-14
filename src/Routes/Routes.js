@@ -6,6 +6,7 @@ import Contact from "../Pages/Contact";
 import HomePage from "../Pages/HomePage";
 import SignIn from "../Sheared/SignIn";
 import SignUp from "../Sheared/SignUp";
+import PrivateRoutes from "./PrivateRoutes";
 
 export const router = createBrowserRouter([
     {
@@ -19,7 +20,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/food',
-                element: <Home></Home>
+                element: <PrivateRoutes><Home></Home></PrivateRoutes>
             },
             {
                 path: '/contact',
