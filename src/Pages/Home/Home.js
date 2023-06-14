@@ -6,6 +6,7 @@ import './Home.css';
 import Grid from '@mui/material/Grid/Grid';
 import Cart from './Cart';
 import { FormControl, InputLabel, OutlinedInput } from '@mui/material';
+import { toast } from 'react-hot-toast';
 
 
 
@@ -100,16 +101,21 @@ const Home = () => {
 
     const handleAddToCart = (product) => {
         console.log(product);
-        const newProduct = {
-            id: product.id,
-            price: product.price,
-            img: product.image,
-            name: product.name,
-            productQuantity: addQuantity,
-
+        if (addQuantity < 1) {
+            toast.error("Please add quantity")
         }
-        const newCart = [...cart, newProduct]
-        setCart(newCart)
+        else {
+            const newProduct = {
+                id: product.id,
+                img: product.image,
+                name: product.name,
+                productQuantity: addQuantity,
+                price: product.price * addQuantity,
+
+            }
+            const newCart = [...cart, newProduct]
+            setCart(newCart)
+        }
     }
     console.log(cart);
 

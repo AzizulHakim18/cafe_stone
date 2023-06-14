@@ -2,19 +2,13 @@
     {
         "id": 11,
         "name": "Pepperoni",
-        "quantity": 17,
+        "quantity": 2,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 200,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 340,
         "category_veg": "NonVeg",
         "category": "Pizza",
         "image": "https://img.freepik.com/free-photo/italian-sausage-Pizza-table_140725-7029.jpg",
@@ -23,19 +17,13 @@
     {
         "id": 12,
         "name": "Mushroom",
-        "quantity": 13,
+        "quantity": 3,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 200,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 240,
         "category_veg": "NonVeg",
         "category": "Pizza",
         "image": "https://img.freepik.com/free-photo/mixed-ingredient-pizza-with-cheese-tomatoes_114579-3585.jpg?w=740&t=st=1686544161~exp=1686544761~hmac=dbfc1875d3deb48eec559babdef29281d93b9b7779cf24bc42d9f7cfdc2d84e3",
@@ -44,19 +32,13 @@
     {
         "id": 13,
         "name": "Extra cheese",
-        "quantity": 15,
+        "quantity": 2,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 200,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 310,
         "category_veg": "NonVeg",
         "category": "Pizza",
         "image": "https://img.freepik.com/free-photo/delicious-pizza-with-vegetables-salami-isolated-white_392895-363596.jpg?w=740&t=st=1686544135~exp=1686544735~hmac=711e077df996f27e91cccfd905bde5623393ec254da151cab5b6e91996b27051",
@@ -65,19 +47,13 @@
     {
         "id": 14,
         "name": "Sausage",
-        "quantity": 13,
+        "quantity": 3,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 200,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 370,
         "category_veg": "Veg",
         "category": "Pizza",
         "image": "https://img.freepik.com/free-photo/freshly-baked-pizza-rustic-wooden-table-generated-by-ai_24640-89760.jpg?w=1060&t=st=1686544107~exp=1686544707~hmac=7ddada96b58d8f9c32fefae30e8c434e5f427fbd57f2deadc4405f89c954544b",
@@ -86,19 +62,13 @@
     {
         "id": 15,
         "name": "Onion",
-        "quantity": 11,
+        "quantity": 1,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 200,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 410,
         "category_veg": "NonVeg",
         "category": "Pizza",
         "image": "https://img.freepik.com/free-photo/side-view-pizza-with-slices-bell-pepper-pizza-slices-flour-board-cookware_176474-3185.jpg?w=740&t=st=1686544077~exp=1686544677~hmac=a431721a8821b91fca08edfe96e3605a6eeb50ad50e1980d26bf910a1bc7a49b",
@@ -107,19 +77,13 @@
     {
         "id": 16,
         "name": "Black olives",
-        "quantity": 10,
+        "quantity": 8,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 200,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 230,
         "category_veg": "Veg",
         "category": "Pizza",
         "image": "https://img.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg?w=740&t=st=1686544045~exp=1686544645~hmac=94a16c2ee03dc0d7908800ef20dc2bff05a6a35c2adb8f4708af5ec04d867e8b",
@@ -128,19 +92,13 @@
     {
         "id": 21,
         "name": "Turkey burger",
-        "quantity": 17,
+        "quantity": 9,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 200,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 140,
         "category_veg": "NonVeg",
         "category": "Burger",
         "image": "https://img.freepik.com/free-photo/front-view-chicken-burgers-with-cheese-green-salad-wooden-desk-sandwich-fast-food-meal-food_140725-25955.jpg?w=996&t=st=1686543968~exp=1686544568~hmac=e2c675eba8cad06aa80c8704917c05226ec98c2b3d21441b741e41e03425a07f",
@@ -149,19 +107,13 @@
     {
         "id": 22,
         "name": "Portobello mushroom burger",
-        "quantity": 13,
+        "quantity": 3,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 200,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 250,
         "category_veg": "NonVeg",
         "category": "Burger",
         "image": "https://img.freepik.com/free-photo/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon_2829-5398.jpg?w=740&t=st=1686543943~exp=1686544543~hmac=bbf95fe7a3edf83a16aea086206939b83b66d214f8e54c1bfb701420c3b7b8e8",
@@ -170,19 +122,13 @@
     {
         "id": 23,
         "name": "Veggie burger",
-        "quantity": 15,
+        "quantity": 5,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 200,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 270,
         "category_veg": "NonVeg",
         "category": "Burger",
         "image": "https://img.freepik.com/free-photo/hamburger-with-cheese-lettuce-tomatoes_1232-504.jpg?w=996&t=st=1686543922~exp=1686544522~hmac=cfff6145d736590bfb89505def1a5137b4f7bb54d304e2006d3308505f643fc8",
@@ -191,19 +137,13 @@
     {
         "id": 24,
         "name": "Wild salmon burger",
-        "quantity": 13,
+        "quantity": 3,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 200,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 370,
         "category_veg": "Veg",
         "category": "Burger",
         "image": "https://img.freepik.com/premium-photo/big-double-cheddar-cheeseburger-with-chicken-cutlet_147620-1306.jpg?w=740",
@@ -212,19 +152,13 @@
     {
         "id": 25,
         "name": "Cheeseburger",
-        "quantity": 11,
+        "quantity": 1,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 200,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 270,
         "category_veg": "NonVeg",
         "category": "Burger",
         "image": "https://img.freepik.com/free-photo/front-view-delicious-meat-hamburger-with-red-tomatoes-dark-background_179666-19345.jpg?w=996&t=st=1686543872~exp=1686544472~hmac=3efa3a4fffa03b1b36f9d3119a43feb8bfa786255f14f8aba7cf664135e88e34",
@@ -233,19 +167,13 @@
     {
         "id": 26,
         "name": "Bean burger",
-        "quantity": 10,
+        "quantity": 1,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 200,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 170,
         "category_veg": "Veg",
         "category": "Burger",
         "image": "https://img.freepik.com/free-photo/grilled-beef-burger-with-fries-cheese-tomato-generative-ai_188544-8466.jpg?w=1060&t=st=1686543851~exp=1686544451~hmac=37346ab960df59ce602923d18f7f2d6e893886b1c8d3834dab76bcb24335725b",
@@ -254,19 +182,13 @@
     {
         "id": 31,
         "name": "Fish pellets",
-        "quantity": 17,
+        "quantity": 7,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 300,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 410,
         "category_veg": "NonVeg",
         "category": "Fish",
         "image": "https://img.freepik.com/free-photo/spicy-fried-tubtim-fish-salad-spicy-thai-food_1150-26481.jpg?w=996&t=st=1686543801~exp=1686544401~hmac=8dbe7766ae0e5c7a45ffff69e9d7358373084e3af488f71ce0f4f5da0eed6ef7",
@@ -275,19 +197,13 @@
     {
         "id": 32,
         "name": "Tablets for fish",
-        "quantity": 13,
+        "quantity": 3,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 300,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 580,
         "category_veg": "NonVeg",
         "category": "Fish",
         "image": "https://img.freepik.com/free-photo/top-view-fried-fish-with-sauce-slice-orange-with-vegetables_141793-4015.jpg?w=826&t=st=1686543742~exp=1686544342~hmac=d953a33f1570d69fd7dd9f853d1733b71a249617263a331cbf087dd2a6c01cc2",
@@ -296,19 +212,13 @@
     {
         "id": 33,
         "name": "Fish sticks",
-        "quantity": 15,
+        "quantity": 5,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 300,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 690,
         "category_veg": "NonVeg",
         "category": "Fish",
         "image": "https://img.freepik.com/free-photo/roasted-fish-garnished-with-lemon-slices-served-with-vegetables_140725-1413.jpg?w=1060&t=st=1686543711~exp=1686544311~hmac=4e2d828cc9ee1514fcac61aeb6a9079e45a49535eff37a77fa0a0f82441f106f",
@@ -317,19 +227,13 @@
     {
         "id": 34,
         "name": "Fish wafers",
-        "quantity": 13,
+        "quantity": 9,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 300,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 510,
         "category_veg": "Veg",
         "category": "Fish",
         "image": "https://img.freepik.com/premium-photo/seafood-fish_78502-22.jpg?w=996",
@@ -338,19 +242,13 @@
     {
         "id": 35,
         "name": "Fish chips",
-        "quantity": 11,
+        "quantity": 8,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 300,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 630,
         "category_veg": "NonVeg",
         "category": "Fish",
         "image": "https://img.freepik.com/free-photo/sour-curry-with-snakehead-fish-spicy-garden-hot-pot-thai-food_1150-26404.jpg?w=996&t=st=1686543613~exp=1686544213~hmac=14e565875161777745aab59054ca6a080e5f77314d2d03aa0a134363a266fa28",
@@ -359,19 +257,13 @@
     {
         "id": 36,
         "name": "Freeze-dried fish food",
-        "quantity": 10,
+        "quantity": 6,
         "varients": [
             "small",
             "medium",
             "large"
         ],
-        "prices": [
-            {
-                "small": 300,
-                "medium": 350,
-                "large": 400
-            }
-        ],
+        "price": 570,
         "category_veg": "Veg",
         "category": "Fish",
         "image": "https://img.freepik.com/free-photo/top-view-delicious-fish-meal-tray_23-2148734692.jpg?w=996&t=st=1686543564~exp=1686544164~hmac=1ecfacb63f20692f129822e065be45be8926ed2b50f7c5267d7599e4fb2c091e",

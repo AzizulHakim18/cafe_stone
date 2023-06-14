@@ -3,11 +3,12 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions, Grid } from '@mui/material';
+import { Button, CardActionArea, CardActions } from '@mui/material';
 import Backdrop from '@mui/material/Backdrop';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Box from '@mui/material/Box';
+import { toast } from 'react-hot-toast';
 
 const style = {
     position: 'absolute',
@@ -24,7 +25,7 @@ const style = {
 
 const Products = ({ item, handleAddToCart, setAddQuantity, addQuantity }) => {
     // console.log(item);
-    const { image, category, id, name, prices, quantity, varients, description } = item;
+    const { image, category, id, name, price, quantity, description } = item;
 
 
     const [open, setOpen] = useState(false);
@@ -38,8 +39,6 @@ const Products = ({ item, handleAddToCart, setAddQuantity, addQuantity }) => {
     return (
 
         <div >
-
-
             <Card sx={{ maxWidth: 345 }} >
                 <CardActionArea>
                     <CardMedia
@@ -54,11 +53,21 @@ const Products = ({ item, handleAddToCart, setAddQuantity, addQuantity }) => {
                         </Typography>
                         <Typography variant="body2" color="text.primary">
                             Quantity: <select name="" id="" onChange={(e) => { setAddQuantity(e.target.value) }}>
-                                {[...Array(5).keys()].map((x, i) => {
-                                    return <option value={i + 1}>{i + 1}</option>
-                                })}
+
+                                {
+                                    (quantity < addQuantity) ? toast.error("Insuficient product please try agian letter.") :
+                                        <> {[...Array(5).keys()].map((x, i) => {
+                                            return <option value={i}>{i}</option>
+                                        })}</>
+                                }
+
+
                             </select>
 
+
+                        </Typography>
+                        <Typography variant="body2" color="text.primary">
+                            Price: {price} BDT
                         </Typography>
                     </CardContent>
                 </CardActionArea>
@@ -89,6 +98,15 @@ const Products = ({ item, handleAddToCart, setAddQuantity, addQuantity }) => {
                     <Box sx={style}>
                         <Typography id="transition-modal-title" variant="h6" component="h2">
                             {item.name}
+                        </Typography>
+                        <Typography id="transition-modal-title" variant="h6" component="h2">
+                            Category: {category}
+                        </Typography>
+                        <Typography id="transition-modal-title" variant="h6" component="h2">
+                            Available: {quantity}
+                        </Typography>
+                        <Typography id="transition-modal-title" variant="h6" component="h2">
+                            Price: {price} BDT
                         </Typography>
                         <Typography id="transition-modal-description" sx={{ mt: 2 }}>
                             {description}
