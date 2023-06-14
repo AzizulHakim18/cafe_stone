@@ -182,6 +182,8 @@ const Home = () => {
                     </Grid>
                     <div className='shopping_cart'>
                         <Cart
+
+                            key={cart.id}
                             cart={cart}
                         ></Cart>
                     </div>

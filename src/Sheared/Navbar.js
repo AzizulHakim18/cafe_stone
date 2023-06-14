@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,11 +14,24 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
 import RamenDiningIcon from '@mui/icons-material/RamenDining';
+import { AuthContext } from '../Context/UserContext';
+import { toast } from 'react-hot-toast';
 
 const Navbar = () => {
 
+    const { user, logout } = useContext(AuthContext);
+    const name = user?.displayName;
+
+    const handleLogout = () => {
+        logout()
+            .then(() => {
+                toast.success('Successfully Sign Out')
+            })
+            .catch(error => toast.error(error))
+    }
+
     const pages = ['Food', 'Contact'];
-    const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+    const settings = ['Profile', 'Account', 'Dashboard',];
 
 
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -27,17 +40,13 @@ const Navbar = () => {
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
-    };
+
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
 
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
+
 
     return (
         <AppBar position="static">
@@ -61,6 +70,7 @@ const Navbar = () => {
                     >
                         Cafe Stone
                     </Typography>
+
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
@@ -94,7 +104,7 @@ const Navbar = () => {
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                                     <Typography textAlign="center">
-                                        <Link style={{ textDecoration: "none", color: "white" }} to={`/${page}`}>
+                                        <Link style={{ textDecoration: "none", color: "Blue" }} to={`/${page}`}>
                                             {page}
                                         </Link>
                                     </Typography>
@@ -102,6 +112,9 @@ const Navbar = () => {
                             ))}
                         </Menu>
                     </Box>
+
+
+
                     <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                     <Typography
                         variant="h5"
@@ -135,35 +148,62 @@ const Navbar = () => {
                         ))}
                     </Box>
 
-                    <Box sx={{ flexGrow: 0 }}>
-                        <Tooltip title="Open settings">
-                            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-                            </IconButton>
-                        </Tooltip>
-                        <Menu
-                            sx={{ mt: '45px' }}
-                            id="menu-appbar"
-                            anchorEl={anchorElUser}
-                            anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
+                    <div>
+                        {
+                            user?.uid ?
+                                <Link onClick={handleLogout} to="/">
+                                    <Typography
+                                        variant="h6"
+                                        noWrap
+                                        component="a"
+                                        sx={{
+                                            mr: 2,
+                                            display: { xs: 'none', md: 'flex' },
+                                            color: 'inherit',
+                                            textDecoration: 'none',
+                                        }}
+                                    >
+                                        Sign Out
+                                    </Typography>
+                                </Link>
+
+
+                                : <Link to="/signin"
+                                >
+
+                                    <Typography
+                                        variant="h6"
+                                        noWrap
+                                        component="a"
+                                        sx={{
+                                            mr: 2,
+                                            display: { xs: 'none', md: 'flex' },
+                                            textDecoration: 'none',
+                                        }}>
+                                        Sign In
+                                    </Typography>
+                                </Link>
+                        }
+
+
+
+                        {/* <Typography
+                            variant="h6"
+                            noWrap
+                            component="a"
+                            sx={{
+                                mr: 2,
+                                display: { xs: 'none', md: 'flex' },
+                                color: 'inherit',
+                                textDecoration: 'none',
                             }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            open={Boolean(anchorElUser)}
-                            onClose={handleCloseUserMenu}
                         >
-                            {settings.map((setting) => (
-                                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography textAlign="center">{setting}</Typography>
-                                </MenuItem>
-                            ))}
-                        </Menu>
-                    </Box>
+                            Sign In
+                        </Typography> */}
+                    </div>
+
+
+
                 </Toolbar>
             </Container>
         </AppBar>
